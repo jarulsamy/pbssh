@@ -183,7 +183,7 @@ class Passbolt:
 
         return json.loads(payload)["password"]
 
-    def search(self, uri: str, username: str | None = None) -> dict:
+    def search(self, uri: str, username: str = None) -> dict:
         """Search Passbolt for an entry for uri and optionally username.
 
         :param uri: URI to match within resource.
