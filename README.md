@@ -19,6 +19,16 @@ passwords from Passbolt.
 
 ## Installation
 
+`pbssh`'s only major system dependency (other than Python) is `sshpass`.
+
+```
+# RHEL/Fedora based
+$ sudo dnf install sshpass
+
+# Debian/Ubuntu based
+$ sudo apt install sshpass
+```
+
 Assuming you have Python 3.9+ and pip installed already it should be as simple as:
 
 ```shell
