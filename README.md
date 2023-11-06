@@ -1,4 +1,11 @@
-# Passbolt SSH
+<h1 align="center">Passbolt SSH</h1>
+<p align="center">
+<img alt="Python Versions" src="https://img.shields.io/pypi/pyversions/pbssh">
+<a href="https://pypi.org/project/pbssh/"><img alt="PyPI" src="https://img.shields.io/pypi/v/pbssh"></a>
+<img alt="Total LOC" src="https://img.shields.io/tokei/lines/github/jarulsamy/pbssh">
+<a href="https://github.com/psf/black"><img alt="Code style: black" src="https://img.shields.io/badge/code%20style-black-000000.svg"></a>
+<a href="https://github.com/jarulsamy/pbssh/blob/master/LICENSE"><img alt="License" src="https://img.shields.io/github/license/jarulsamy/pbssh"></a>
+</p>
 
 > **Disclaimer:** This is a community driven project and it is not associated with
 > Passbolt SA.
@@ -9,6 +16,14 @@ frequently SSH into a variety of different machines. You store all your
 passwords in Passbolt, but you hate having to copy/paste passwords all the time.
 Welcome to `pbssh`, a thin wrapper on top of SSH which automatically grabs
 passwords from Passbolt.
+
+## Installation
+
+Assuming you have Python 3.9+ and pip installed already it should be as simple as:
+
+```shell
+$ pip install pbssh
+```
 
 ## Usage
 
