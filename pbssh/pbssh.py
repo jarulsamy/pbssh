@@ -385,7 +385,7 @@ def main() -> int:
     api = Passbolt(
         base_url=base_url,
         key_file=key_file,
-        verify=False,
+        verify=True,
     )
 
     try:
