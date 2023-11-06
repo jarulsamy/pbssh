@@ -377,13 +377,13 @@ def main() -> int:
     config = load_config(config_file_path)
 
     key_file = Path(config["Passbolt"]["gpgkey_path"]).expanduser()
-    base_url = Path(config["Passbolt"]["base_url"])
+    base_url = config["Passbolt"]["base_url"]
 
     logger.info("Base URL: %s", base_url)
     logger.info("Keyfile: %s", key_file)
 
     api = Passbolt(
-        base_url="https://localhost",
+        base_url=base_url,
         key_file=key_file,
         verify=False,
     )
